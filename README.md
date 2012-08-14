@@ -9,10 +9,10 @@ Playing
 -------
 
 There are four game modes to choose from:
-1. Human v Computer
-2. Computer v Human
-3. Human v Human
-4. Computer v Computer
+* Human v Computer
+* Computer v Human
+* Human v Human
+* Computer v Computer
 
 Play the game [here](http://www.rickwinfrey.com)
 
