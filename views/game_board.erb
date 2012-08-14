@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>JS TTT</title>
+<!--  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> -->
+    <script type="text/javascript" src="/scripts/jquery-1.6.1.min.js"></script>
+    <script type="text/javascript" src="/scripts/computer_player.js"></script>
+    <script type="text/javascript" src="/scripts/human_player.js"></script>
+    <script type="text/javascript" src="/scripts/game_board.js"></script>
+    <script type="text/javascript" src="/scripts/tree.js"></script>
+    <script type="text/javascript" src="/scripts/AI.js"></script>
+    <script type="text/javascript" src="/scripts/ttt.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+  </head>
+  <body>
+    <div id="game_header">
+      <h1>Welcome To Tickey Tackey Toe!</h1>
+    </div>
+    <div id="wrapper">
+    </div>      
+    
+    <div id="left_side_bar">
+      <div id="game_mode" class="game_mode_wrapper">
+        <div id="side_bar_title">
+          <h3>Please select game mode:</h3>
+        </div>
+        <div id="game_mode_buttons">
+          <div id ="0" class="human_v_ai game_mode unselected">H v C</div>
+          <div id ="1" class="ai_v_human game_mode unselected">C v H</div>
+          <div id ="2" class="human_v_human game_mode unselected">H v H</div>
+          <div id ="3" class="ai_v_ai game_mode unselected">C v C</div>
+        </div>
+        <div>
+          <button id="mode" class="button" onclick="choose_mark()">Next</button>
+        </div>
+      </div>
+    </div>
+    
+    <div id="game_board" class="game_board">
+      <!--<button id="start" class="button" onclick="start_game()">Start Game</button> -->
+      <table style="width: 630px; display:inline-block;">
+        <tr>
+          <td id="0" class="open border game-square top-left"></td>
+          <td id="1" class="open border game-square middle-top"></td>
+          <td id="2" class="open border game-square top-right"></td>
+        </tr>
+        <tr>
+          <td id="3" class="open border game-square left"></td>
+          <td id="4" class="open border game-square"></td>
+          <td id="5" class="open border game-square right"></td>
+        </tr>
+        <tr>
+          <td id="6" class="open border game-square bottom-left"></td>
+          <td id="7" class="open border game-square middle-bottom"></td>
+          <td id="8" class="open border game-square bottom-right"></td>
+        </tr>
+      </table>
+    </div>
+    <div id="right_side_bar" class="side_bar right_float">
+      <div id="player_mark" class="player_mark">
+        <div id="player_mark_header">
+          <h3>Choose your mark:</h3>
+        </div>
+        <div class="game_mark">
+          <div id="x" class="choose_mark unselected">x</div>
+          <div id="o" class="choose_mark unselected">o</div>
+        </div>
+        <div>
+          <button id="mark" class="button" onclick="start_game()">Start!</button>
+        </div>
+      </div>
+    </div>
+    <div id="modal">
+      <div class="modal">Hello</div>
+    </div>    
+  </body>
+</html>
