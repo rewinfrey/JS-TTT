@@ -30,6 +30,10 @@ tr {
   padding: 0;
 }
 
+li {
+  text-align: left;
+  list-style-type: none;
+}
 /* Button Styling */
 .button {
   float: right;
@@ -336,4 +340,32 @@ tr {
   top: 30px;
   left: -160px;
   z-index: 5;
+}
+
+/* Cobra */
+.cobra {
+  position: absolute;
+  top: -30px;
+  left: -180px;
+  z-index: 5;
+}
+
+.cobra_wrapper {
+  width: 565px;
+  margin: 40px auto 0 auto;
+  position: relative;
+  font-size: 30px;
+}
+
+/* Link */
+.cobra_link {
+  position: absolute;
+  top: 40px;
+  left: -250px;
+}
+
+.rikki_link {
+  position: absolute;
+  top: -30px;
+  left: -250px;
 }
