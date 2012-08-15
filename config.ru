@@ -1,2 +1,2 @@
-require './ttt.rb'
+require './ttt'
 gem 'sinatra'
