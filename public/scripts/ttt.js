@@ -35,10 +35,7 @@ function assign_side(element) {
   if($(element).hasClass("unselected")) {
     $('.selected').removeClass("selected").addClass("unselected");
     $(element).removeClass("unselected").addClass("selected");
-  } else {
-    $(".unselected").removeClass("unselected").addClass("selected");
-    $(element).removeClass("selected").addClass("unselected");
-  }
+  } 
 }
 
 function process_mode() {
