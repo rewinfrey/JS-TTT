@@ -14,7 +14,7 @@ There are four game modes to choose from:
 * Human v Human
 * Computer v Computer
 
-Play the game [here](http://www.rickwinfrey.com)
+Play the game [here](http://jsttt.herokuapp.com/)
 
 Other Details
 -------------
