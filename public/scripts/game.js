@@ -58,9 +58,9 @@ Game.prototype.play = function() {
 }
 
 Game.prototype.human_move = function(player, game) {
-  console.log("\nhuman_move");
   $('td').unbind('click').click( function() {
-    if ($(this).hasClass('open')) {
+    game_over = $('.won');
+    if ($(this).hasClass('open') && game_over.length == 0) {
       move = parseInt($(this).attr('id'));
       game.mark_board(move, player.side);
       game.play();
@@ -69,7 +69,6 @@ Game.prototype.human_move = function(player, game) {
 }
 
 Game.prototype.AI_move = function(player) {
-  console.log("\nAI move");
   move = player.move(this.game_board);
   this.mark_board(move, player.side);
   this.play();
@@ -81,7 +80,6 @@ Game.prototype.opposite_of = function(side) {
 
 Game.prototype.mark_board = function(move, side) {
   this.game_board[move] = side;
-  console.log("side = "+side+" move = "+move);
   $('#'+move).html(side);
   $('#'+move).addClass('closed').removeClass('open');
 }
